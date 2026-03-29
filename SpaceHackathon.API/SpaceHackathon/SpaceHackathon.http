@@ -1,0 +1,6 @@
+@SpaceHackathon_HostAddress = http://localhost:5269
+
+GET {{SpaceHackathon_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

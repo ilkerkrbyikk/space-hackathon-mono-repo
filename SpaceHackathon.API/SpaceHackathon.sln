@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpaceHackathon", "SpaceHackathon\SpaceHackathon.csproj", "{5809D90E-38CA-477F-AF50-3FC3A32CF2EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5809D90E-38CA-477F-AF50-3FC3A32CF2EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5809D90E-38CA-477F-AF50-3FC3A32CF2EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5809D90E-38CA-477F-AF50-3FC3A32CF2EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5809D90E-38CA-477F-AF50-3FC3A32CF2EB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6B0BB3F6-3BB6-499A-BA02-C1ED00F5B745}
+	EndGlobalSection
+EndGlobal

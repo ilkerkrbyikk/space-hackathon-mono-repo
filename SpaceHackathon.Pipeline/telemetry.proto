@@ -1,0 +1,34 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "SpaceHackathon.Grpc";
+
+package telemetry;
+
+service TelemetryProcessor {
+  rpc ProcessStream (stream TelemetryRequest)
+  returns (stream TelemetryResponse);
+}
+
+enum AnomalyType {
+  NONE  = 0;
+  SPIKE = 1;
+  DROP  = 2;
+  DRIFT = 3;
+}
+
+message TelemetryRequest {
+  int64  timestamp    = 1;
+  string satellite_id = 2;
+  string sensor_type  = 3;
+  double raw_value    = 4;
+  string checksum     = 5;
+}
+
+message TelemetryResponse {
+  int64       timestamp     = 1;
+  double      cleaned_value = 2;
+  bool        is_anomaly    = 3;
+  float       confidence    = 4;
+  string      message       = 5;
+  AnomalyType anomaly_type  = 6;
+}
